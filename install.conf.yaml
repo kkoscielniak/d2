@@ -1,0 +1,10 @@
+- clean: ['~']
+
+- link:
+    ~/.zshrc: zshrc
+    ~/.xinitrc: xinitrc
+    ~/.config/i3:
+        path: config/i3/
+        create: true
+
+
