@@ -6,5 +6,7 @@
     ~/.config/i3:
         path: config/i3/
         create: true
-
-
+    ~/.gitconfig: gitconfig
+    ~/.config/alacritty: 
+        path: config/alacritty/
+        create: true 
