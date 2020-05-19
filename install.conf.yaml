@@ -10,6 +10,7 @@
     ~/.config/alacritty: 
         path: config/alacritty/
         create: true
+    ~/.fehbg: fehbg
 - create:
   - ~/Downloads 
   - ~/Pictures
