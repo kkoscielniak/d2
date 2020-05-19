@@ -9,4 +9,7 @@
     ~/.gitconfig: gitconfig
     ~/.config/alacritty: 
         path: config/alacritty/
-        create: true 
+        create: true
+- create:
+  - ~/Downloads 
+  - ~/Pictures
