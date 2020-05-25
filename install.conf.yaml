@@ -11,6 +11,9 @@
         path: config/alacritty/
         create: true
     ~/.fehbg: fehbg
+    ~/.config/nvim:
+        path: config/nvim
+        create: true
 - create:
   - ~/Downloads 
   - ~/Pictures
