@@ -22,6 +22,7 @@
     ~/.config/nvim:
         path: config/nvim
         create: true
+    ~/.tmux.conf: tmux.conf    
 - create:
   - ~/Downloads 
   - ~/Pictures
