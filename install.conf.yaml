@@ -1,19 +1,33 @@
 - clean: ['~']
 
 - link:
-    ~/.zshrc: zshrc
-    ~/.xinitrc: xinitrc
+    ~/.zshrc: 
+        if: '[ `uname` = Linux ]'
+        path: zshrc  
+    ~/.xinitrc: 
+        if: '[ `uname` = Linux ]'
+        path: xinitrc
     ~/.config/i3:
         path: config/i3/
         create: true
+        if: '[ `uname` = Linux ]'
     ~/.gitconfig: gitconfig
     ~/.config/alacritty: 
         path: config/alacritty/
         create: true
-    ~/.fehbg: fehbg
+        if: '[ `uname` = Linux ]'
+    ~/.fehbg: 
+        if: '[ `uname` = Linux ]'
+        path: fehbg
     ~/.config/nvim:
         path: config/nvim
         create: true
 - create:
   - ~/Downloads 
   - ~/Pictures
+
+
+- shell: 
+  - 
+    command: curl -fLo ${"XDG_DATA_HOME:-$HOME/.local/share"}/nvim/site/autoload/plug.vim --create-dirs https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
+    description: Install Vim-plug to nvim
