@@ -25,6 +25,12 @@
       if: "[ `uname` = Linux ]"
       path: fehbg
 
+    # macOS only
+    ~/.config/yabai:
+      if: "[ `uname` = Darwin ]"
+      path: config/yabai
+      create: true
+
 - create:
     - ~/Downloads
     - ~/Pictures
