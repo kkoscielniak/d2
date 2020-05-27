@@ -2,7 +2,6 @@
 
 - link:
     ~/.zshrc:
-      if: "[ `uname` = Linux ]"
       path: zshrc
     ~/.xinitrc:
       if: "[ `uname` = Linux ]"
