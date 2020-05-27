@@ -26,6 +26,7 @@
       path: fehbg
 
     # macOS only
+    ~/.hyper.js: hyper.js
     ~/.config/yabai:
       if: "[ `uname` = Darwin ]"
       path: config/yabai
