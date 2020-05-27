@@ -1,5 +1,3 @@
-source ~/.dotfiles/aliases
-
 # set path to .oh-my-zsh with respect to the OS
 case `uname` in
   Darwin)
@@ -14,6 +12,9 @@ plugins=(git tmux z)
 ZSH_TMUX_AUTOSTART=true
 
 source $ZSH/oh-my-zsh.sh
+[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+source ~/.dotfiles/fzfrc
+source ~/.dotfiles/aliases
 
 # Enable pure prompt
 autoload -U promptinit; promptinit
