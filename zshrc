@@ -1,3 +1,5 @@
+source ~/.dotfiles/aliases
+
 # set path to .oh-my-zsh with respect to the OS
 case `uname` in
   Darwin)

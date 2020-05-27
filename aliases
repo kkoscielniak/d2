@@ -1,0 +1,9 @@
+alias reload='source ~/.zshrc'
+alias p='pwd'
+alias f='fzf'
+
+# the_fuck
+eval $(thefuck --alias)
+
+# git utils
+alias git-remove-merged='git branch --merged | egrep -v "(^\*|master|develop)" | xargs git branch -d'
