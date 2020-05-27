@@ -3,29 +3,32 @@
 - link:
     ~/.zshrc:
       path: zshrc
-    ~/.xinitrc:
-      if: "[ `uname` = Linux ]"
-      path: xinitrc
-    ~/.config/i3:
-      path: config/i3/
-      create: true
-      if: "[ `uname` = Linux ]"
     ~/.gitconfig: gitconfig
-    ~/.config/alacritty:
-      path: config/alacritty
-      create: true
-      if: "[ `uname` = Linux ]"
-    ~/.fehb`g:
-      if: "[ `uname` = Linux ]"
-      path: fehbg
     ~/.config/nvim:
       path: config/nvim
       create: true
     ~/.tmux.conf: tmux.conf
+
+    # Linux only
+    ~/.xinitrc:
+      if: "[ `uname` = Linux ]"
+      path: xinitrc
+    ~/.config/i3:
+      if: "[ `uname` = Linux ]"
+      path: config/i3
+      create: true
+    ~/.config/alacritty:
+      if: "[ `uname` = Linux ]"
+      path: config/alacritty
+      create: true
+    ~/.fehbg:
+      if: "[ `uname` = Linux ]"
+      path: fehbg
+
 - create:
     - ~/Downloads
     - ~/Pictures
 
 - shell:
     - command: curl -fLo ${"XDG_DATA_HOME:-$HOME/.local/share"}/nvim/site/autoload/plug.vim --create-dirs https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
-      description: Install Vim-plug to nvim
+      description: Install Vim-plug for nvim
