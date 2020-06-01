@@ -1,8 +1,8 @@
 module.exports = {
-  config: {    
+  config: {
     updateChannel: 'stable',
     fontSize: 14,
-    fontFamily: 'FuraCode Nerd Font',
+    fontFamily: 'FiraCode Nerd Font',
     fontWeight: 'normal',
     fontWeightBold: 'bold',
     cursorColor: 'rgba(248,28,229,0.8)',
@@ -45,7 +45,7 @@ module.exports = {
   plugins: [
     'hyperlinks',
     'hyper-hide-title',
-    'hyper-altair'	  
+    'hyper-altair'
   ],
   localPlugins: [],
   keymaps: {  },
