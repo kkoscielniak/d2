@@ -31,6 +31,10 @@
       if: "[ `uname` = Darwin ]"
       path: config/yabai
       create: true
+    ~/.config/skhd:
+      if: "[ `uname` = Darwin ]"
+      path: config/skhd
+      create: true
 
 - create:
     - ~/Downloads
