@@ -16,6 +16,8 @@ source $ZSH/oh-my-zsh.sh
 source ~/.dotfiles/fzfrc
 source ~/.dotfiles/aliases
 
+export EDITOR='nvim'
+
 # Enable pure prompt
 fpath+=$HOME/.zsh/pure
 autoload -U promptinit; promptinit
