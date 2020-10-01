@@ -15,7 +15,8 @@ key_bindings:
 cursor:
   style: Underline
 
-dynamic_title: true
+window:
+  dynamic_title: true
 
 live_config_reload: true
 
