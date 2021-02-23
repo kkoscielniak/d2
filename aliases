@@ -1,4 +1,5 @@
 alias reload='source ~/.zshrc'
+alias mux='tmuxinator'
 alias p='pwd'
 alias f='fzf'
 
