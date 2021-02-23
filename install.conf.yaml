@@ -8,6 +8,9 @@
       path: config/nvim
       create: true
     ~/.tmux.conf: tmux.conf
+    ~/.config/alacritty:
+      path: config/alacritty
+      create: true
 
     # Linux only
     ~/.xinitrc:
@@ -16,10 +19,6 @@
     ~/.config/i3:
       if: "[ `uname` = Linux ]"
       path: config/i3
-      create: true
-    ~/.config/alacritty:
-      if: "[ `uname` = Linux ]"
-      path: config/alacritty
       create: true
     ~/.fehbg:
       if: "[ `uname` = Linux ]"
