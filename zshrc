@@ -29,4 +29,12 @@ export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"
 
 # Android SDK
-export $ANDROID_SDK_ROOT=~/Library/Android/sdk
+export ANDROID_SDK_ROOT=~/Library/Android/sdk
+export ANDROID_HOME=~/Library/Android/sdk
+export ANDROID_NDK_HOME=~/Library/Android/sdk/ndk/21.3.6528147
+PATH="$PATH:~/Library/Android/sdk/platform-tools/"
+export JAVA_HOME=`/usr/libexec/java_home -v 1.8.0_292`
+
+# Tizen Studio
+export TIZEN_STUDIO=~/Dev/tizen/tizen-studio
+PATH="$PATH:$TIZEN_STUDIO/tools/ide/bin/"
